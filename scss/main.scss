@@ -102,6 +102,7 @@
   cursor: pointer;
   height: 56px;
   width: 20%;
+  // Кнопка абсолютно спозиционирована внутри input
   position: absolute;
   right: -5px;
   bottom: 5px;
@@ -113,7 +114,8 @@
  fill: white;
  color: white;
  cursor: pointer;
- border: 2px solid #ffffff;
+ /* border: 2px solid #ffffff; */
+ border: none;
  outline: 0;
  font-size: 14px;
  letter-spacing: 1px;
@@ -169,16 +171,19 @@ display: flex;
     align-items: center;
     width: 100%;
     height: 100vh;
+    background: url("../img/Section_1_bg_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }
 
 .sec1-top {
- background: url("../img/Section_1_bg_img.jpg");
+ 
  display: flex;
  justify-content: space-around;
  align-items: center;
- background-repeat: no-repeat;
- background-size: cover;
- width: 100%;
+ 
+ /* width: 100%; */
  flex: 1 1 auto;
 }
 
@@ -189,6 +194,7 @@ display: flex;
     justify-content: space-around;
     align-items:flex-start;
     width: 50%;
+    // с помощью padding центрирую секцию
     padding: 10% 0% 7% 20%;
 
 
@@ -219,6 +225,7 @@ display: flex;
         font-weight: 400;
         font-family: "Aleo" , serif;
         text-transform: uppercase;
+        // Размер кнопки фиксированный
         width: 225px;
         height: 60px;
         margin-top: 50px;
@@ -231,6 +238,7 @@ display: flex;
 flex-direction: column;
 justify-content: space-between;
 width: 50%;
+// с помощью padding центрирую секцию
 padding: 10% 20% 7% 5%;
 
 &__img-top {
@@ -247,15 +255,15 @@ padding: 10% 20% 7% 5%;
 
 }
 
+// Нижняя часть секции и сумасшудщий набор стилей для дуги
 .sec1-btm{
     background-color: #333;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
 }
-
-
 
 .wrap{
     display: flex;
@@ -314,4 +322,60 @@ padding: 10% 20% 7% 5%;
     margin-left: -50px;
   }
   
+
+
+//section 2
+.section2{
+    background: url(../img/section_3_bg_img.jpg);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.book-the-room {
+    background-color: rgba($color: #232323, $alpha: 0.8);
+    width: 25%;
+    padding: 50px 70px 45px 30px;
+
+    &__subtitle {
+        font-size: 20px;
+        letter-spacing: 2px;
+        line-height: 26px;
+        color: #e8e8e8;
+        font-family: "Josefin Sans";
+    }
+    &__title {
+        font-size: 20px;
+        line-height: 26px;
+        color: #ffffff;
+        font-family: "Josefin Sans";
+    }
+
+
+    &__text {
+        font-size: 16px;
+        line-height: 26px;
+        color: #e8e8e8;
+        font-family: "Josefin Sans";
+    }
+
+    &__btn{
+        width: 225px;
+        height: 60px;
+        margin-top: 46px;
+    }
+
+}
+
+.sec2-book-it{
+    position:absolute;
+    top: 46%;
+    left: 28%;
+    transform: translate(-25%, -25%);
+
+}
 

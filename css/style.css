@@ -237,7 +237,8 @@ table {
   fill: white;
   color: white;
   cursor: pointer;
-  border: 2px solid #ffffff;
+  /* border: 2px solid #ffffff; */
+  border: none;
   outline: 0;
   font-size: 14px;
   letter-spacing: 1px;
@@ -307,10 +308,12 @@ table {
           align-items: center;
   width: 100%;
   height: 100vh;
+  background: url("../img/Section_1_bg_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .sec1-top {
-  background: url("../img/Section_1_bg_img.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -319,9 +322,7 @@ table {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
+  /* width: 100%; */
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -416,6 +417,8 @@ table {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrap {
@@ -485,6 +488,58 @@ table {
 
 .icon-enjoy {
   margin-left: -50px;
+}
+
+.section2 {
+  background: url(../img/section_3_bg_img.jpg);
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.book-the-room {
+  background-color: rgba(35, 35, 35, 0.8);
+  width: 25%;
+  padding: 50px 70px 45px 30px;
+}
+.book-the-room__subtitle {
+  font-size: 20px;
+  letter-spacing: 2px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+}
+.book-the-room__title {
+  font-size: 20px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+}
+.book-the-room__text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #e8e8e8;
+  font-family: "Josefin Sans";
+}
+.book-the-room__btn {
+  width: 225px;
+  height: 60px;
+  margin-top: 46px;
+}
+
+.sec2-book-it {
+  position: absolute;
+  top: 46%;
+  left: 28%;
+  -webkit-transform: translate(-25%, -25%);
+          transform: translate(-25%, -25%);
 }
 
 @media screen and (max-width: 760px) {
