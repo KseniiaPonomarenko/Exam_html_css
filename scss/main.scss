@@ -1,202 +1,183 @@
-
-.header {
- //Block
- background: url("../img/header_bg_img.jpg");
- width: 100%;
- height: 100vh;
- display: flex;
- flex-direction: column;
- background-repeat: no-repeat;
- background-size: cover;
-
- &__top {
- //Element
- flex: 1 1 auto;
-
- }
- &__info {
- // Element
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- }
-
- &__btm {
-  background-color: #5474fd;
-  width: 100%;
-  margin: 0 auto;
-  padding: 35px 20%;
-  box-sizing: border-box;
-
- }
-
+body {
+    margin: 0;
 }
 
+.standart-sec {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.header {
+    //Block
+    background: url("../img/header_bg_img.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__top {
+        //Element
+        flex: 1 1 auto;
+    }
+    &__info {
+        // Element
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__btm {
+        background-color: #5474fd;
+        width: 100%;
+        margin: 0 auto;
+        padding: 35px 20%;
+        box-sizing: border-box;
+    }
+}
 
 .info {
- //Block
- display: block;
- text-align: center;
- margin: 0;
- /* Устанавливаю размер для этого div т.к. шириина поля ввода болье, чем заголовок */
- width: 40%;
- &__text {
-  //Element
-  margin-bottom: 40px ;
- }
- &__logo {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 48px;
-  letter-spacing: 5px;
-  line-height: 26px;
-  color: #ffffff;
-  font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
-
- }
- &__description {
-  font-size: 22px;
-  letter-spacing: 7px;
-  line-height: 26px;
-  color: #ffffff;
-  font-weight: 300;
-  font-family: "Josefin Sans", sans-serif;
-
- }
+    //Block
+    display: block;
+    text-align: center;
+    margin: 0;
+    /* Устанавливаю размер для этого div т.к. шириина поля ввода болье, чем заголовок */
+    width: 40%;
+    &__text {
+        //Element
+        margin-bottom: 40px;
+    }
+    &__logo {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 48px;
+        letter-spacing: 5px;
+        line-height: 26px;
+        color: #ffffff;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 700;
+    }
+    &__description {
+        font-size: 22px;
+        letter-spacing: 7px;
+        line-height: 26px;
+        color: #ffffff;
+        font-weight: 300;
+        font-family: "Josefin Sans", sans-serif;
+    }
 }
 
 .search {
     position: relative;
- &__form{
-  input::-webkit-input-placeholder {
-   font-size: 14px;
-   letter-spacing: 3px;
-   line-height: 26px;
-   color: #999999;
-   font-family: "Josefin Sans", sans-serif;
-   text-align: center;
-  
-  }
+    &__form {
+        input::-webkit-input-placeholder {
+            font-size: 14px;
+            letter-spacing: 3px;
+            line-height: 26px;
+            color: #999999;
+            font-family: "Josefin Sans", sans-serif;
+            text-align: center;
+        }
+    }
+    &__input {
+        width: 100%;
+        height: 60px;
+    }
 
- }
- &__input {
-    width: 100%;
-    height: 60px;
-  }
-
-
- &__label {
-  font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 26px;
-  color: #999999;
-  text-align: center;
-
- }
- &__btn{
-  fill: white;
-  color: white;
-  cursor: pointer;
-  height: 56px;
-  width: 20%;
-  // Кнопка абсолютно спозиционирована внутри input
-  position: absolute;
-  right: -5px;
-  bottom: 5px;
- 
- }
+    &__label {
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 26px;
+        color: #999999;
+        text-align: center;
+    }
+    &__btn {
+        fill: white;
+        color: white;
+        cursor: pointer;
+        height: 56px;
+        width: 20%;
+        // Кнопка абсолютно спозиционирована внутри input
+        position: absolute;
+        right: -5px;
+        bottom: 5px;
+    }
 }
-.btn{
- background-color: #5474fd;
- fill: white;
- color: white;
- cursor: pointer;
- /* border: 2px solid #ffffff; */
- border: none;
- outline: 0;
- font-size: 14px;
- letter-spacing: 1px;
- color: #ffffff;
- font-weight: 400;
- font-family: "Aleo";
- text-align: center;
+.btn {
+    background-color: #5474fd;
+    fill: white;
+    color: white;
+    cursor: pointer;
+    /* border: 2px solid #ffffff; */
+    border: none;
+    outline: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Aleo";
+    text-align: center;
 
- &__svg {
-align-items: center;
- }
+    &__svg {
+        align-items: center;
+    }
 }
 
 .menu {
-display: flex;
- justify-content: space-between;
- align-items: center;
- flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 
-
- &__logo {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 24px;
-  color: #ffffff;
-  font-weight: 700;
-  font-family: "Josefin Sans", sans-serif;
-  flex-grow: 1;
-  flex-shrink: 1;
-  min-width: 200px;
- }
- &__link {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #ffffff;
-  font-weight: 400;
-  font-family: "Aleo", serif;
-  margin-right: 15px;
-  flex-shrink: 0;
-
- }
+    &__logo {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 24px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Josefin Sans", sans-serif;
+        flex-grow: 1;
+        flex-shrink: 1;
+        min-width: 200px;
+    }
+    &__link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #ffffff;
+        font-weight: 400;
+        font-family: "Aleo", serif;
+        margin-right: 15px;
+        flex-shrink: 0;
+    }
 }
-
-
 
 //section 1
 
 .section-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
     background: url("../img/Section_1_bg_img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    
+    width: 100%;
 }
 
 .sec1-top {
- 
- display: flex;
- justify-content: space-around;
- align-items: center;
- 
- /* width: 100%; */
- flex: 1 1 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    flex: 1 1 auto;
 }
-
-
-.left-part{
+.left-part {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:flex-start;
+    align-items: flex-start;
     width: 50%;
-    // с помощью padding центрирую секцию
-    padding: 10% 0% 7% 20%;
-
 
     &__title {
         font-size: 36px;
@@ -205,10 +186,10 @@ display: flex;
         color: #ffffff;
         font-weight: 400;
         font-family: "Aleo", sans-serif;
+        margin-top: 80px;
     }
-    
 
-    &__description{
+    &__description {
         font-size: 16px;
         letter-spacing: 2px;
         line-height: 26px;
@@ -223,40 +204,34 @@ display: flex;
         color: #ffffff;
         background-color: #5474fd;
         font-weight: 400;
-        font-family: "Aleo" , serif;
+        font-family: "Aleo", serif;
         text-transform: uppercase;
         // Размер кнопки фиксированный
         width: 225px;
         height: 60px;
         margin-top: 50px;
-
     }
 }
 
 .right-part {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-width: 50%;
-// с помощью padding центрирую секцию
-padding: 10% 20% 7% 5%;
-
-&__img-top {
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
 
-}
- &__img-btm{
-    display: flex;
-    justify-content:flex-end;
-    margin-top: 5px;
-
- }
-
+    &__img-top {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__img-btm {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 5px;
+    }
 }
 
 // Нижняя часть секции и сумасшудщий набор стилей для дуги
-.sec1-btm{
+.sec1-btm {
     background-color: #333;
     width: 100%;
     display: flex;
@@ -265,19 +240,19 @@ padding: 10% 20% 7% 5%;
     box-sizing: border-box;
 }
 
-.wrap{
+.wrap {
     display: flex;
     margin-top: 40px;
-  }
+}
 
-  .circle {
+.circle {
     position: relative;
     overflow: hidden;
     width: 300px;
     height: 60px;
-  }
-  .circle::before{
-    content: '';
+}
+.circle::before {
+    content: "";
     border-top: 1px dashed #cccccc;
     border-radius: 50%;
     width: 460px;
@@ -286,60 +261,55 @@ padding: 10% 20% 7% 5%;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
-    
-  }
+}
 
-  .icon-name{
+.icon-name {
     font-size: 36px;
     line-height: 26px;
     color: #e8e8e8;
     font-weight: 400;
     font-family: "Aleo";
     text-align: center;
-  }
+}
 
-  .icon-block{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 45px;
-  }
+.icon-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 45px;
+}
 
-  .icon-pic {
-      width: fit-content;
-  }
+.icon-pic {
+    width: fit-content;
+}
 
-  .icon-search{
+.icon-search {
     margin-right: -50px;
-  }
+}
 
-  .icon-select{
+.icon-select {
     margin-right: -50px;
     margin-left: -50px;
-  }
+}
 
-  .icon-enjoy{
+.icon-enjoy {
     margin-left: -50px;
-  }
-  
-
+}
 
 //section 2
-.section2{
+.section2 {
     background: url(../img/section_3_bg_img.jpg);
-    width: 100%;
-    height: 100vh;
-    display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
     box-sizing: border-box;
 }
 
 .book-the-room {
-    background-color: rgba($color: #232323, $alpha: 0.8);
-    width: 25%;
-    padding: 50px 70px 45px 30px;
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    margin-top: 230px;
+    margin-bottom: 100px;
 
     &__subtitle {
         font-size: 20px;
@@ -347,6 +317,7 @@ padding: 10% 20% 7% 5%;
         line-height: 26px;
         color: #e8e8e8;
         font-family: "Josefin Sans";
+        margin: 0;
     }
     &__title {
         font-size: 20px;
@@ -355,7 +326,6 @@ padding: 10% 20% 7% 5%;
         font-family: "Josefin Sans";
     }
 
-
     &__text {
         font-size: 16px;
         line-height: 26px;
@@ -363,19 +333,34 @@ padding: 10% 20% 7% 5%;
         font-family: "Josefin Sans";
     }
 
-    &__btn{
+    &__btn {
         width: 225px;
         height: 60px;
         margin-top: 46px;
     }
-
 }
 
-.sec2-book-it{
-    position:absolute;
-    top: 46%;
-    left: 28%;
-    transform: translate(-25%, -25%);
-
+.book-wrap {
+    background-color: rgba($color: #232323, $alpha: 0.8);
+    width: 540px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 45px 70px 45px 30px;
 }
 
+.sec2-book {
+    justify-content: flex-start;
+}
+
+//section 3
+.section3 {
+    background: url(../img/section_4_bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.sec3-book {
+    justify-content: flex-end;
+}
