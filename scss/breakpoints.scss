@@ -1,7 +1,7 @@
 $breakpoints: (
     "sm": 420px,
     "md": 720px,
-    "xl": 1200px,
+    "xl": 1150px,
     "defl": 1800px,
 );
 
@@ -34,17 +34,51 @@ $breakpoints: (
     }
 }
 
-.for-test-size {
-    @include defl {
-        background: red;
+//Header
+.search {
+    &__input {
+        @include xl {
+            height: 50px;
+            padding-right: 100px;
+        }
     }
+
+    &__btn {
+        @include xl {
+            width: 100px;
+            height: 47px;
+        }
+    }
+}
+
+.header__btm {
     @include xl {
-        background: blue;
+        padding: 20px 15%;
     }
+}
+
+.sec1-top {
+    @include xl {
+        max-width: 100%;
+    }
+
     @include md {
-        background: green;
+        max-width: 100%;
     }
     @include sm {
-        background: black;
+        max-width: 100%;
+    }
+}
+
+.book-the-room {
+    @include xl {
+        max-width: 100%;
+    }
+
+    @include md {
+        max-width: 100%;
+    }
+    @include sm {
+        max-width: 100%;
     }
 }
