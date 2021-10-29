@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Josefin+Sans:wght@300;700&family=Lato:wght@300;400;700&display=swap");
+
 body {
     margin: 0;
 }
@@ -363,4 +365,119 @@ body {
 
 .sec3-book {
     justify-content: flex-end;
+}
+
+//section 4
+
+.section4 {
+    background: url(../img/section_5_bg_img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.sec4_div {
+    margin-top: 120px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sec4__title {
+    font-size: 36px;
+    line-height: 26px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Aleo";
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
+
+.sec4_info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.sec4__pic {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.sec4__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: #333;
+}
+.description__name {
+    font-size: 20px;
+    line-height: 26px;
+    color: #fefefe;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.new-quotes {
+    position: relative;
+    padding: 20px;
+    display: inline-block;
+}
+
+.new-quotes::after {
+    content: url(../img/new_quotes.svg);
+    position: absolute;
+}
+
+.description__review {
+    font-size: 14px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    color: white;
+    line-height: 26px;
+    width: 100%;
+    text-align: left;
+}
+
+// footer
+
+.social-media {
+    background-color: #232323;
+    &__logo {
+        font-size: 24px;
+        letter-spacing: 3px;
+        line-height: 26px;
+        color: #ffffff;
+        font-weight: 700;
+        font-family: "Josefin Sans";
+        margin-top: 120px;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 16px;
+        letter-spacing: 2px;
+        line-height: 26px;
+        color: #ffffff;
+        font-family: "Josefin Sans";
+        text-align: center;
+    }
+
+    &__links {
+        margin: 10px;
+    }
+
+    /*  &__links:hover {
+        fill: #5474fd;
+        background-color: burlywood;
+    } */
+}
+
+.jj:hover {
+    fill: crimson;
 }
