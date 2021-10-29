@@ -539,10 +539,9 @@ body {
 
 .social-media {
   background-color: #232323;
-  /*  &__links:hover {
-      fill: #5474fd;
-      background-color: burlywood;
-  } */
+  min-height: -webkit-fit-content;
+  min-height: -moz-fit-content;
+  min-height: fit-content;
 }
 .social-media__logo {
   font-size: 24px;
@@ -562,11 +561,13 @@ body {
   font-family: "Josefin Sans";
   text-align: center;
 }
+.social-media__icons {
+  margin-bottom: 50px;
+}
 .social-media__links {
   margin: 10px;
 }
-
-.jj:hover {
-  fill: crimson;
+.social-media__links:hover svg path {
+  fill: #5474fd;
 }
 /*# sourceMappingURL=main.css.map */
