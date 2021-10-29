@@ -67,7 +67,34 @@ body {
         color: #ffffff;
         font-weight: 300;
         font-family: "Josefin Sans", sans-serif;
+        margin-top: 15px;
     }
+}
+
+.btn {
+    background: linear-gradient(43deg, #496bfe 41%, #5474fd 41%);
+    fill: white;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Aleo";
+    text-align: center;
+    box-sizing: border-box;
+
+    &__svg {
+        align-items: center;
+    }
+}
+
+.btn:hover {
+    background: #fff;
+    color: #5474fd;
+    border: 2px solid #5474fd;
 }
 
 .search {
@@ -85,6 +112,8 @@ body {
     &__input {
         width: 100%;
         height: 60px;
+        padding-right: 148px;
+        box-sizing: border-box;
     }
 
     &__label {
@@ -95,6 +124,7 @@ body {
         text-align: center;
     }
     &__btn {
+        background: #5474fd;
         fill: white;
         color: white;
         cursor: pointer;
@@ -102,39 +132,13 @@ body {
         width: 20%;
         // Кнопка абсолютно спозиционирована внутри input
         position: absolute;
-        right: -5px;
-        bottom: 5px;
+        right: 2px;
+        bottom: 1.5px;
     }
 
     &__btn:hover svg .cls-1 {
         fill: #5474fd;
     }
-}
-.btn {
-    background-color: #5474fd;
-    fill: white;
-    color: white;
-    cursor: pointer;
-    /* border: 2px solid #ffffff; */
-    border: none;
-    outline: 0;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: #ffffff;
-    font-weight: 400;
-    font-family: "Aleo";
-    text-align: center;
-    box-sizing: border-box;
-
-    &__svg {
-        align-items: center;
-    }
-}
-
-.btn:hover {
-    background-color: #fff;
-    color: #5474fd;
-    border: 2px solid #5474fd;
 }
 
 .menu {
@@ -223,6 +227,7 @@ body {
         font-weight: 400;
         font-family: "Aleo", sans-serif;
         margin-top: 80px;
+        margin-bottom: 60px;
     }
 
     &__description {
@@ -279,6 +284,7 @@ body {
 .wrap {
     display: flex;
     margin-top: 40px;
+    margin-bottom: 120px;
 }
 
 .circle {
@@ -306,6 +312,7 @@ body {
     font-weight: 400;
     font-family: "Aleo";
     text-align: center;
+    margin-top: 25px;
 }
 
 .icon-block {
@@ -360,6 +367,8 @@ body {
         line-height: 26px;
         color: #ffffff;
         font-family: "Josefin Sans";
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     &__text {
@@ -506,6 +515,7 @@ body {
 
     &__icons {
         margin-bottom: 50px;
+        margin-top: 20px;
     }
 
     &__links {

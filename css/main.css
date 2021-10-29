@@ -72,50 +72,14 @@ body {
   color: #ffffff;
   font-weight: 300;
   font-family: "Josefin Sans", sans-serif;
-}
-
-.search {
-  position: relative;
-}
-.search__form input::-webkit-input-placeholder {
-  font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 26px;
-  color: #999999;
-  font-family: "Josefin Sans", sans-serif;
-  text-align: center;
-}
-.search__input {
-  width: 100%;
-  height: 60px;
-}
-.search__label {
-  font-size: 14px;
-  letter-spacing: 3px;
-  line-height: 26px;
-  color: #999999;
-  text-align: center;
-}
-.search__btn {
-  fill: white;
-  color: white;
-  cursor: pointer;
-  height: 56px;
-  width: 20%;
-  position: absolute;
-  right: -5px;
-  bottom: 5px;
-}
-.search__btn:hover svg .cls-1 {
-  fill: #5474fd;
+  margin-top: 15px;
 }
 
 .btn {
-  background-color: #5474fd;
+  background: linear-gradient(43deg, #496bfe 41%, #5474fd 41%);
   fill: white;
   color: white;
   cursor: pointer;
-  /* border: 2px solid #ffffff; */
   border: none;
   outline: 0;
   font-size: 14px;
@@ -134,9 +98,49 @@ body {
 }
 
 .btn:hover {
-  background-color: #fff;
+  background: #fff;
   color: #5474fd;
   border: 2px solid #5474fd;
+}
+
+.search {
+  position: relative;
+}
+.search__form input::-webkit-input-placeholder {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #999999;
+  font-family: "Josefin Sans", sans-serif;
+  text-align: center;
+}
+.search__input {
+  width: 100%;
+  height: 60px;
+  padding-right: 148px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.search__label {
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #999999;
+  text-align: center;
+}
+.search__btn {
+  background: #5474fd;
+  fill: white;
+  color: white;
+  cursor: pointer;
+  height: 56px;
+  width: 20%;
+  position: absolute;
+  right: 2px;
+  bottom: 1.5px;
+}
+.search__btn:hover svg .cls-1 {
+  fill: #5474fd;
 }
 
 .menu {
@@ -247,6 +251,7 @@ body {
   font-weight: 400;
   font-family: "Aleo", sans-serif;
   margin-top: 80px;
+  margin-bottom: 60px;
 }
 .left-part__description {
   font-size: 16px;
@@ -321,6 +326,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-top: 40px;
+  margin-bottom: 120px;
 }
 
 .circle {
@@ -350,6 +356,7 @@ body {
   font-weight: 400;
   font-family: "Aleo";
   text-align: center;
+  margin-top: 25px;
 }
 
 .icon-block {
@@ -415,6 +422,8 @@ body {
   line-height: 26px;
   color: #ffffff;
   font-family: "Josefin Sans";
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .book-the-room__text {
   font-size: 16px;
@@ -595,6 +604,7 @@ body {
 }
 .social-media__icons {
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 .social-media__links {
   margin: 10px;
