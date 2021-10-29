@@ -243,6 +243,9 @@ body {
   right: -5px;
   bottom: 5px;
 }
+.search__btn:hover svg .cls-1 {
+  fill: #5474fd;
+}
 
 .btn {
   background-color: #5474fd;
@@ -258,11 +261,19 @@ body {
   font-weight: 400;
   font-family: "Aleo";
   text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 .btn__svg {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #5474fd;
+  border: 2px solid #5474fd;
 }
 
 .menu {
@@ -302,6 +313,23 @@ body {
   margin-right: 15px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+}
+
+.scroll-down {
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+.scroll-down__link {
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  line-height: 26px;
+  color: #ffffff;
+  font-family: "Josefin Sans";
+  text-align: center;
+}
+.scroll-down__pointer {
+  display: block;
 }
 
 .section-1 {
