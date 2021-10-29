@@ -314,6 +314,10 @@ body {
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
+.menu__link:hover {
+  color: rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
 
 .scroll-down {
   margin: 0 auto;
@@ -665,9 +669,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 50px;
