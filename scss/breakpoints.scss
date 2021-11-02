@@ -1,6 +1,6 @@
 $breakpoints: (
     "sm": 420px,
-    "md": 720px,
+    "md": 850px,
     "xl": 1150px,
     "defl": 1800px,
 );
@@ -53,13 +53,15 @@ $breakpoints: (
 
 .header__btm {
     @include xl {
-        padding: 20px 15%;
+        padding: 20px 10%;
     }
 }
 
+//Section-1
 .sec1-top {
     @include xl {
         max-width: 100%;
+        margin: 50px 50px 50px 50px;
     }
 
     @include md {
@@ -70,6 +72,110 @@ $breakpoints: (
     }
 }
 
+.left-part {
+    @include xl {
+        align-items: center;
+    }
+
+    @include md {
+    }
+    @include sm {
+    }
+
+    &__title {
+        @include xl {
+            margin-top: 0;
+            margin-bottom: 40px;
+            font-size: 32px;
+        }
+
+        @include md {
+        }
+        @include sm {
+        }
+    }
+
+    &__description {
+        @include xl {
+            font-size: 14px;
+        }
+
+        @include md {
+        }
+        @include sm {
+        }
+    }
+
+    &__btn {
+        @include xl {
+            margin-top: 20px;
+        }
+
+        @include md {
+        }
+        @include sm {
+        }
+    }
+}
+
+.right-part {
+    @include xl {
+        width: auto;
+
+        &__img-top {
+            justify-content: center;
+        }
+        &__img-btm {
+            justify-content: center;
+        }
+        &__img {
+            object-position: center;
+            object-fit: contain;
+            width: 300px;
+            height: 170px;
+        }
+    }
+
+    @include md {
+    }
+    @include sm {
+    }
+}
+
+.wrap {
+    @include xl {
+        margin-bottom: 40px;
+    }
+
+    @include md {
+    }
+    @include sm {
+    }
+}
+
+.icon-name {
+    @include xl {
+        font-size: 22px;
+    }
+
+    @include md {
+    }
+    @include sm {
+    }
+}
+
+.icon-block {
+    @include xl {
+        margin-top: 55px;
+    }
+
+    @include md {
+    }
+    @include sm {
+    }
+}
+
+//Section-2
 .book-the-room {
     @include xl {
         max-width: 100%;

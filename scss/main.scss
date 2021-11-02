@@ -2,7 +2,6 @@
 @import url("./breakpoints.scss");
 .standart-sec {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,6 +12,7 @@
     background: url("../img/header_bg_img.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 
     &__top {
         //Element

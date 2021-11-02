@@ -140,7 +140,6 @@ table {
 
 .standart-sec {
   width: 100%;
-  min-height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,6 +156,7 @@ table {
   background: url("../img/header_bg_img.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 .header__top {
   -webkit-box-flex: 1;
@@ -771,16 +771,17 @@ table {
 
 @media (max-width: 1150px) {
   .header__btm {
-    padding: 20px 15%;
+    padding: 20px 10%;
   }
 }
 
 @media (max-width: 1150px) {
   .sec1-top {
     max-width: 100%;
+    margin: 50px 50px 50px 50px;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   .sec1-top {
     max-width: 100%;
   }
@@ -792,11 +793,73 @@ table {
 }
 
 @media (max-width: 1150px) {
+  .left-part {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media (max-width: 1150px) {
+  .left-part__title {
+    margin-top: 0;
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 1150px) {
+  .left-part__description {
+    font-size: 14px;
+  }
+}
+@media (max-width: 1150px) {
+  .left-part__btn {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1150px) {
+  .right-part {
+    width: auto;
+  }
+  .right-part__img-top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .right-part__img-btm {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .right-part__img {
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 300px;
+    height: 170px;
+  }
+}
+@media (max-width: 1150px) {
+  .wrap {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 1150px) {
+  .icon-name {
+    font-size: 22px;
+  }
+}
+@media (max-width: 1150px) {
+  .icon-block {
+    margin-top: 55px;
+  }
+}
+@media (max-width: 1150px) {
   .book-the-room {
     max-width: 100%;
   }
 }
-@media (max-width: 720px) {
+@media (max-width: 850px) {
   .book-the-room {
     max-width: 100%;
   }
