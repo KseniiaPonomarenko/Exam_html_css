@@ -1,5 +1,6 @@
 @import "./reset.scss";
 @import "./fonts.scss";
 @import "./main.scss";
-@import "./resp.scss";
-@import "./breakpoints.scss";
+@import "./resp.scss"; // думаю его можно удалить - он пуст
+@import "./breakpoints.scss"; // смотри mixin ето уровень "профи". я безусловно рад что ты его уже юзаешь
+// Но мне куда важней что бы ты его понимала, как он работает. Колективная работа ? )))

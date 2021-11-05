@@ -1,5 +1,6 @@
+/* у тебя есть отдельный файл для шрифтов */
 @import url("https://fonts.googleapis.com/css2?family=Aleo:wght@300;400&family=Josefin+Sans:wght@300;700&family=Lato:wght@300;400;700&display=swap");
-@import url("./breakpoints.scss");
+@import url("./breakpoints.scss"); /* Дублирование */
 .standart-sec {
     width: 100%;
     display: flex;
@@ -287,6 +288,7 @@
     margin-bottom: 120px;
 }
 
+// желательно переписать на препроцессор
 .circle {
     position: relative;
     overflow: hidden;
@@ -327,15 +329,20 @@
 }
 
 .icon-search {
-    margin-right: -50px;
+    margin-right: -50px; /*
+    а почему на иконки ? - можно было поступить проще и отрицательный навесить на .circle.
+    И не ломать структуру блоков для контента.
+*/
 }
 
 .icon-select {
+    /* ехх */
     margin-right: -50px;
     margin-left: -50px;
 }
 
 .icon-enjoy {
+    /* ехх */
     margin-left: -50px;
 }
 
@@ -429,6 +436,7 @@
 }
 
 .sec4__title {
+    /* почему не использовала препроцессор */
     font-size: 36px;
     line-height: 26px;
     color: #ffffff;
@@ -440,6 +448,7 @@
 }
 
 .sec4_info {
+    /* препроцессор */
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
