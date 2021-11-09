@@ -12,11 +12,34 @@
 </head>
 
 <body>
-
-    <!--Header-->
+<!--
+Мои коментарии удаляются после исправления !
+  + cod-style:
+    - испоьзуй выравнивание кода
+    - местами непонятные пустые промежутки в блоках
+  + PixelPerfect :
+    - Если закрыть глаза на разбежность в +-20рх - то ето одна из лучших совпадений.
+        обычно стараются попасть в +-10px
+    - если бы использовала програмку PixelPerfect - Былобы вообще идеально.
+  + Адаптив:
+  + БЕМ :
+    - В названиях классов - нужно учитывать что они буду переиспользоватся тобой и твоими колегами.
+      И старатся называть класс одним словом без разделителей. @Info: https://ru.bem.info/methodology/quick-start/
+      Класс должен отвечать на вопрос "кто ты? / что это?" и без лишних приставок
+  + other :
+    - помимо svg - попробуй использовать библиотеку иконок(https://habr.com/ru/company/edison/blog/481420/)
+    - в каждом проекте должен быть .gitignore также считается плохим тоном если в репозиторий попадают системные настройки
+     или твоего редактора (.vscode) Используй .gitignore @Info: https://tyapk.ru/blog/post/gitignore
+-->
     <header class="header standart-sec">
-
-
+        <!--
+          + Адаптив:
+            - после 1000 сильно ужимает поиск. нечитабельно и не удобно а побокам много пустого пространства
+            - после 840 - меню ломается
+          + БЕМ - все четенько:
+          + other :
+            - placeholder в поиске - на меньших разрешениях не влазит )) Нужно будет хорошенько подумать как ето исправить
+        -->
 
         <div class="header__top">
             <div class="header__info info">
@@ -71,8 +94,21 @@
 
     <!--Section 1-->
     <section class="standart-sec" id="choose-us">
-
         <div class="section-1 standart-sec">
+            <!--
+              + PixelPerfect :
+                - очень хорошо
+              + Адаптив:
+                - начало прекраасно - правильно сделала что первым ужимается пустое пространство!
+                - после 740 - левый оступ куда меньше правого. А посже текст вообще залипает к краю екрана
+                    и даже болие того - контент прячится за грань экрана
+              + БЕМ :
+                - классы тяжело воспринимать - section-1/standart-sec/sec1-top  -  названия классов не очем не говорит
+              + other :
+                - помимо svg - попробуй использовать библиотеку иконок(https://habr.com/ru/company/edison/blog/481420/)
+                - секцию "sec1-btm" - нужно было делать независимой от "section-1"
+                - sec1-top - мне кажется безполезным - потому что можно было выкрутится и уменьшить количество оберток
+            -->
             <div class="sec1-top">
 
                 <div class="left-part">
@@ -101,7 +137,12 @@
         </div>
 
         <div class="sec1-btm">
-
+            <!--
+              + Адаптив:
+                - прекрассно, правда только до 580рх
+              + БЕМ :
+                - wrap - ето название не для живого проекта.
+            -->
             <div class="wrap">
                 <div class="icon-block icon-search">
                     <img class="icon-pic" src="./img/search-blue.svg" alt="Search">
@@ -135,6 +176,12 @@
 
     <!--Section 2-->
     <section class="section2 standart-sec" id="second-sec">
+        <!--
+          + Адаптив:
+            - пойдет
+          + БЕМ :
+            - нехочу повторятся
+        -->
         <div class="book-the-room sec2-book">
             <div class="book-wrap">
                 <p class="book-the-room__subtitle">Spain</p>
@@ -152,6 +199,12 @@
 
     <!--Section 3-->
     <section class="section3 standart-sec" id="island">
+        <!--
+          + Адаптив:
+            - пойдет
+          + БЕМ :
+            - нехочу повторятся
+        -->
         <div class="book-the-room sec3-book">
             <div class="book-wrap">
                 <p class="book-the-room__subtitle">Spain</p>
@@ -169,6 +222,14 @@
 
     <!--Section 4-->
     <section class="section4 standart-sec" id="review">
+        <!--
+          + Адаптив:
+            - после 1000 - картинка блывет- Адаптировать картинку и блок с картинкой!
+            - после 800 - все ужасно
+
+          + other :
+            - sec4__title - текст выходит за граници блока
+        -->
         <div class="book-the-room sec4_div">
             <h2 class="sec4__title">What Our Tourist Say</h2>
             <div class="sec4_info">
@@ -189,7 +250,7 @@
 
     </section>
 
-    <!--Footer 4-->
+    <!--Footer - все збсь )) -->
     <footer class="social-media standart-sec" id="social-media">
         <h4 class="social-media__logo">BHROMAON</h4>
         <p class="social-media__text">Safe Travel Anywhere</p>
